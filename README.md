@@ -10,36 +10,6 @@ The Offline AI Chatbot provides a ChatGPT-like conversational experience while k
 
 The application communicates with a locally running Ollama server, which manages and executes the selected AI model.
 
-┌──────────────────────┐
-│        User          │
-│   Chat Interface     │
-└──────────┬───────────┘
-           │
-           │ Prompt
-           ▼
-┌──────────────────────┐
-│   Chatbot Frontend   │
-└──────────┬───────────┘
-           │
-           │ HTTP Request
-           ▼
-┌──────────────────────┐
-│       Ollama         │
-│   Local AI Runtime   │
-└──────────┬───────────┘
-           │
-           ▼
-┌──────────────────────┐
-│     Local LLM        │
-│  Llama / Mistral /   │
-│  Gemma / etc.        │
-└──────────┬───────────┘
-           │
-           │ Response
-           ▼
-┌──────────────────────┐
-│    Chat Interface    │
-└──────────────────────┘
 ✨ Features
 🤖 Local AI
 Runs AI models locally using Ollama.
